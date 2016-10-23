@@ -77,7 +77,7 @@ exports.cellsToJson = function(cells, options) {
 
     // find the first row with data to use it as property names
 
-    for (var firstRowIndex = 0; firstRowIndex < rows.length; firstRowIndex++) {
+    for (var firstRowIndex = 2; firstRowIndex < rows.length; firstRowIndex++) {
         if (rows[firstRowIndex])
             break;
     }
