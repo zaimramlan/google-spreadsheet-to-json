@@ -131,6 +131,9 @@ exports.cellsToJson = function(cells, options) {
                 hasValues = true;
             }
 
+            // replace all occurences of '\n' to '<br>' - ZR
+            val = val.replace(/[\u000A]+/g, '<br>');
+
             if (options.listOnly)
                 newObject[colNumber - 1] = val;
             else
