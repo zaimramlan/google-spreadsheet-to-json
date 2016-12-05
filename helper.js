@@ -76,6 +76,7 @@ exports.cellsToJson = function(cells, options) {
     });
 
     // find the first row with data to use it as property names
+    // start with row index 2 - ZR
 
     for (var firstRowIndex = 2; firstRowIndex < rows.length; firstRowIndex++) {
         if (rows[firstRowIndex])
@@ -108,6 +109,10 @@ exports.cellsToJson = function(cells, options) {
 
             var val;
             var colNumber = cell[colProp];
+
+            // skip column index 2, onwards - ZR
+            if(colNumber >= 2)
+                return;
 
             if (!options.listOnly && !properties[colNumber])
                 return;
