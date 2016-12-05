@@ -111,7 +111,7 @@ exports.cellsToJson = function(cells, options) {
             var colNumber = cell[colProp];
 
             // skip column index 2, onwards - ZR
-            if(colNumber >= 2)
+            if(colNumber-1 >= 2)
                 return;
 
             if (!options.listOnly && !properties[colNumber])

@@ -1,3 +1,9 @@
+# 0.4.0
+## New
+- Row starts at `Row 3`
+- Column stops at `Column C`
+- All occurences of `\n` are replaced to `<br>`
+
 # 0.3.0
 ## New
 - Multiple worksheet selection
