@@ -1,3 +1,6 @@
+# 0.4.1
+- Fix bug in replacing all occurences of `\n` to `<br>`
+
 # 0.4.0
 ## New
 - Row starts at `Row 3`
